@@ -1,0 +1,10 @@
+server:
+  port: ${SERVER_PORT:8081}
+
+services:
+  server:
+    url: ${BACK_URL:http://localhost:8080}
+  client:
+    thread: ${THREAD:5}
+    airports: ${AIRPORTS_COUNT:500}
+
