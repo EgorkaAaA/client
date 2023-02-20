@@ -9,7 +9,6 @@ import org.springframework.web.client.RestTemplate;
 public class Config {
 
 	@Bean
-	@Scope(scopeName = "prototype")
 	RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
